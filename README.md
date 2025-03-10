@@ -43,4 +43,31 @@ ebook1.display_info()
 ebook1.read(100)
 ebook1.download() 
 
+Part b
+class Vehicle:
+    def move(self):
+        raise NotImplementedError("Subclasses must implement this method.")
+
+class Car(Vehicle):
+    def move(self):
+        print("Driving 🚗")
+
+class Plane(Vehicle):
+    def move(self):
+        print("Flying ✈️")
+
+class Boat(Vehicle):
+    def move(self):
+        print("Sailing 🚤")
+
+# Create instances of each vehicle
+car = Car()
+plane = Plane()
+boat = Boat()
+
+# Call the move method on each instance
+car.move()    # Output: Driving 🚗
+plane.move()  # Output: Flying ✈️
+boat.move()   # Output: Sailing 🚤
+
  
